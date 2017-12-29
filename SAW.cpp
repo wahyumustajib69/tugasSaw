@@ -2,7 +2,6 @@
 #include <cmath>
 using namespace std;
 
-
 int main(){
 	// DEKLARASI VARIABEL
 	double a1c1,a1c2,a1c3,a1c4,a1c5;
