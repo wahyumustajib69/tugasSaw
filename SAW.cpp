@@ -4,9 +4,7 @@ using namespace std;
 
 int main(){
 	// DEKLARASI VARIABEL
-	double a[5]={4,4,5,3,3};
-	double a2[5]={3,3,4,2,3};
-	double a3[5]={5,4,2,2,2};
+	double a[15]={4,4,5,3,3,3,3,4,2,3,5,4,2,2,2};
 	
 	double Ra1c1,Ra1c2,Ra1c3,Ra1c4,Ra1c5;
 	double Ra2c1,Ra2c2,Ra2c3,Ra2c4,Ra2c5;
@@ -26,11 +24,11 @@ int main(){
 	cout.precision(4);
 	
 	// AMBIL NILAI MAX TIAP KRITERIA
-	mc1=max(a[0],max(a2[0],a3[0]));
-	mc2=max(a[1],max(a2[1],a3[1]));
-	mc3=max(a[2],max(a2[2],a3[2]));
-	mc4=max(a[3],max(a2[3],a3[3]));
-	mc5=max(a[4],max(a2[4],a3[4]));
+	mc1=max(a[0],max(a[5],a[10]));
+	mc2=max(a[1],max(a[6],a[11]));
+	mc3=max(a[2],max(a[7],a[12]));
+	mc4=max(a[3],max(a[8],a[13]));
+	mc5=max(a[4],max(a[9],a[14]));
 	
 	// BUAT MATRIKS R
 	Ra1c1 = (a[0]/mc1);
@@ -39,17 +37,17 @@ int main(){
 	Ra1c4 = (a[3]/mc4);
 	Ra1c5 = (a[4]/mc5);
 	
-	Ra2c1 = (a2[0]/mc1);
-	Ra2c2 = (a2[1]/mc2);
-	Ra2c3 = (a2[2]/mc3);
-	Ra2c4 = (a2[3]/mc4);
-	Ra2c5 = (a2[4]/mc5);
+	Ra2c1 = (a[5]/mc1);
+	Ra2c2 = (a[6]/mc2);
+	Ra2c3 = (a[7]/mc3);
+	Ra2c4 = (a[8]/mc4);
+	Ra2c5 = (a[9]/mc5);
 	
-	Ra3c1 = (a3[0]/mc1);
-	Ra3c2 = (a3[1]/mc2);
-	Ra3c3 = (a3[2]/mc3);
-	Ra3c4 = (a3[3]/mc4);
-	Ra3c5 = (a3[4]/mc5);
+	Ra3c1 = (a[10]/mc1);
+	Ra3c2 = (a[11]/mc2);
+	Ra3c3 = (a[12]/mc3);
+	Ra3c4 = (a[13]/mc4);
+	Ra3c5 = (a[14]/mc5);
 	
 	// MATRIKS R * W
 	RWa1c1 = Ra1c1*w[0];
@@ -78,8 +76,8 @@ int main(){
 	// MENAMPILKAN NILAI
 	cout << "MATRIKS X :"<<endl;
 	cout << a[0] <<" | "<<a[1]<<" | "<<a[2]<<" | "<<a[3]<<" | "<<a[4]<<endl;
-	cout << a2[0] <<" | "<<a2[1]<<" | "<<a2[2]<<" | "<<a2[3]<<" | "<<a2[4]<<endl;
-	cout << a3[0] <<" | "<<a3[1]<<" | "<<a3[2]<<" | "<<a3[3]<<" | "<<a3[4]<<endl;
+	cout << a[5] <<" | "<<a[6]<<" | "<<a[7]<<" | "<<a[8]<<" | "<<a[9]<<endl;
+	cout << a[10] <<" | "<<a[11]<<" | "<<a[12]<<" | "<<a[13]<<" | "<<a[14]<<endl;
 	cout << endl;
 	cout << "MATRIKS R :"<<endl;
 	cout << Ra1c1 <<" | "<<Ra1c2<<" | "<<Ra1c3<<" | "<<Ra1c4<<" | "<<Ra1c5<<endl;
