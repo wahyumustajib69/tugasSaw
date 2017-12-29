@@ -4,9 +4,9 @@ using namespace std;
 
 int main(){
 	// DEKLARASI VARIABEL
-	double a1c1,a1c2,a1c3,a1c4,a1c5;
-	double a2c1,a2c2,a2c3,a2c4,a2c5;
-	double a3c1,a3c2,a3c3,a3c4,a3c5;
+	double a[5]={4,4,5,3,3};
+	double a2[5]={3,3,4,2,3};
+	double a3[5]={5,4,2,2,2};
 	
 	double Ra1c1,Ra1c2,Ra1c3,Ra1c4,Ra1c5;
 	double Ra2c1,Ra2c2,Ra2c3,Ra2c4,Ra2c5;
@@ -24,52 +24,32 @@ int main(){
 	cout.setf(ios::fixed);
 	cout.setf(ios::showpoint);
 	cout.precision(4);
-
-	// ISI DATA
-	
-	a1c1=4;
-	a1c2=4;
-	a1c3=5;
-	a1c4=3;
-	a1c5=3;
-	
-	a2c1=3;
-	a2c2=3;
-	a2c3=4;
-	a2c4=2;
-	a2c5=3;
-	
-	a3c1=5;
-	a3c2=4;
-	a3c3=2;
-	a3c4=2;
-	a3c5=2;
 	
 	// AMBIL NILAI MAX TIAP KRITERIA
-	mc1=max(a1c1,max(a2c1,a3c1));
-	mc2=max(a1c2,max(a2c2,a3c2));
-	mc3=max(a1c3,max(a2c3,a3c3));
-	mc4=max(a1c4,max(a2c4,a3c4));
-	mc5=max(a1c5,max(a2c5,a3c5));
+	mc1=max(a[0],max(a2[0],a3[0]));
+	mc2=max(a[1],max(a2[1],a3[1]));
+	mc3=max(a[2],max(a2[2],a3[2]));
+	mc4=max(a[3],max(a2[3],a3[3]));
+	mc5=max(a[4],max(a2[4],a3[4]));
 	
 	// BUAT MATRIKS R
-	Ra1c1 = (a1c1/mc1);
-	Ra1c2 = (a1c2/mc2);
-	Ra1c3 = (a1c3/mc3);
-	Ra1c4 = (a1c4/mc4);
-	Ra1c5 = (a1c5/mc5);
+	Ra1c1 = (a[0]/mc1);
+	Ra1c2 = (a[1]/mc2);
+	Ra1c3 = (a[2]/mc3);
+	Ra1c4 = (a[3]/mc4);
+	Ra1c5 = (a[4]/mc5);
 	
-	Ra2c1 = (a2c1/mc1);
-	Ra2c2 = (a2c2/mc2);
-	Ra2c3 = (a2c3/mc3);
-	Ra2c4 = (a2c4/mc4);
-	Ra2c5 = (a2c5/mc5);
+	Ra2c1 = (a2[0]/mc1);
+	Ra2c2 = (a2[1]/mc2);
+	Ra2c3 = (a2[2]/mc3);
+	Ra2c4 = (a2[3]/mc4);
+	Ra2c5 = (a2[4]/mc5);
 	
-	Ra3c1 = (a3c1/mc1);
-	Ra3c2 = (a3c2/mc2);
-	Ra3c3 = (a3c3/mc3);
-	Ra3c4 = (a3c4/mc4);
-	Ra3c5 = (a3c5/mc5);
+	Ra3c1 = (a3[0]/mc1);
+	Ra3c2 = (a3[1]/mc2);
+	Ra3c3 = (a3[2]/mc3);
+	Ra3c4 = (a3[3]/mc4);
+	Ra3c5 = (a3[4]/mc5);
 	
 	// MATRIKS R * W
 	RWa1c1 = Ra1c1*w[0];
