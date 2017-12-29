@@ -77,9 +77,9 @@ int main(){
 		
 	// MENAMPILKAN NILAI
 	cout << "MATRIKS X :"<<endl;
-	cout << a1c1 <<" | "<<a1c2<<" | "<<a1c3<<" | "<<a1c4<<" | "<<a1c5<<endl;
-	cout << a2c1 <<" | "<<a2c2<<" | "<<a2c3<<" | "<<a2c4<<" | "<<a2c5<<endl;
-	cout << a3c1 <<" | "<<a3c2<<" | "<<a3c3<<" | "<<a3c4<<" | "<<a3c5<<endl;
+	cout << a[0] <<" | "<<a[1]<<" | "<<a[2]<<" | "<<a[3]<<" | "<<a[4]<<endl;
+	cout << a2[0] <<" | "<<a2[1]<<" | "<<a2[2]<<" | "<<a2[3]<<" | "<<a2[4]<<endl;
+	cout << a3[0] <<" | "<<a3[1]<<" | "<<a3[2]<<" | "<<a3[3]<<" | "<<a3[4]<<endl;
 	cout << endl;
 	cout << "MATRIKS R :"<<endl;
 	cout << Ra1c1 <<" | "<<Ra1c2<<" | "<<Ra1c3<<" | "<<Ra1c4<<" | "<<Ra1c5<<endl;
