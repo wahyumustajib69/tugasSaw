@@ -7,7 +7,6 @@ int main(){
 	double a[3][5]={{4,4,5,3,3},{3,3,4,2,3},{5,4,2,2,2}};
 		
 	double w[5]={5,3,4,4,2};
-	double mc1,mc2,mc3,mc4,mc5;
 	double ha1,ha2,ha3;
 	
 	// SETTING PRESISI DESIMAL
@@ -65,7 +64,10 @@ int main(){
 	
 	//Hasil Akhir
 	cout << "HASIL AKHIR  :"<<endl;
-	cout << "Nilai A1 : "<<ha1<<endl;
-	cout << "Nilai A2 : "<<ha2<<endl;
-	cout << "Nilai A3 : "<<ha3<<endl;
+	for(int i=0;i<3;i++){
+		for(int j=0;j<5;j++){
+			cout<<"Hasil ";
+		}
+		cout<<endl;
+	}
 }
