@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 	// DEKLARASI VARIABEL
-	double a[15]={4,4,5,3,3,3,3,4,2,3,5,4,2,2,2};
+	double a[3][5]={{4,4,5,3,3},{3,3,4,2,3},{5,4,2,2,2}};
 	
 	double Ra1c1,Ra1c2,Ra1c3,Ra1c4,Ra1c5;
 	double Ra2c1,Ra2c2,Ra2c3,Ra2c4,Ra2c5;
