@@ -12,10 +12,7 @@ int main(){
 	
 	// SETTING PRESISI DESIMAL
 	cout.setf(ios::fixed);cout.setf(ios::showpoint);cout.precision(4);
-	
-	// PENJUMLAHAN HASIL R * W	
-
-		
+			
 	// MENAMPILKAN NILAI
 	cout << "MATRIKS X :"<<endl;
 	for(int i=0;i<3;i++){
@@ -53,9 +50,20 @@ int main(){
 	}
 	cout << endl;
 	cout << endl;
-	cout << "MATRIKS R * W :"<<endl;
 	
+	//MENAMPILKAN HASIL R*W
+	cout << "MATRIKS R * W :"<<endl;
+		double RWa[3][5];
+	for(int i=0;i<3;i++){
+		for(int j=0;j<5;j++){
+			RWa[i][j]=Ra[i][j]*w[j];
+			cout<< RWa[i][j]<<" | ";
+		}
+		cout<<endl;
+	}
 	cout << endl;
+	
+	//Hasil Akhir
 	cout << "HASIL AKHIR  :"<<endl;
 	cout << "Nilai A1 : "<<ha1<<endl;
 	cout << "Nilai A2 : "<<ha2<<endl;
