@@ -65,9 +65,7 @@ int main(){
 	//Hasil Akhir
 	cout << "HASIL AKHIR  :"<<endl;
 	for(int i=0;i<3;i++){
-		for(int j=0;j<5;j++){
-			cout<<"Hasil ";
-		}
-		cout<<endl;
+		cout<<"Hasil = "<<RWa[i][0]+RWa[i][1]+RWa[i][2]+RWa[i][3]+RWa[i][4]<<endl;
 	}
+	cout<<endl;
 }
