@@ -6,6 +6,8 @@ int main(){
 	// DEKLARASI VARIABEL
 	double a[3][5]={{4,4,5,3,3},{3,3,4,2,3},{5,4,2,2,2}};
 	
+	// DEKLARASI NILAI MAX DAN MIN
+	
 	double Ra1c1,Ra1c2,Ra1c3,Ra1c4,Ra1c5;
 	double Ra2c1,Ra2c2,Ra2c3,Ra2c4,Ra2c5;
 	double Ra3c1,Ra3c2,Ra3c3,Ra3c4,Ra3c5;
@@ -20,13 +22,6 @@ int main(){
 	
 	// SETTING PRESISI DESIMAL
 	cout.setf(ios::fixed);cout.setf(ios::showpoint);cout.precision(4);
-	
-	// AMBIL NILAI MAX TIAP KRITERIA
-	mc1=max(a[0],max(a[5],a[10]));
-	mc2=max(a[1],max(a[6],a[11]));
-	mc3=max(a[2],max(a[7],a[12]));
-	mc4=max(a[3],max(a[8],a[13]));
-	mc5=max(a[4],max(a[9],a[14]));
 	
 	// BUAT MATRIKS R
 	Ra1c1 = (a[0]/mc1);
@@ -73,9 +68,14 @@ int main(){
 		
 	// MENAMPILKAN NILAI
 	cout << "MATRIKS X :"<<endl;
-	cout << a[0] <<" | "<<a[1]<<" | "<<a[2]<<" | "<<a[3]<<" | "<<a[4]<<endl;
-	cout << a[5] <<" | "<<a[6]<<" | "<<a[7]<<" | "<<a[8]<<" | "<<a[9]<<endl;
-	cout << a[10] <<" | "<<a[11]<<" | "<<a[12]<<" | "<<a[13]<<" | "<<a[14]<<endl;
+	for(int i=0;i<=3;i++){
+		for(int j=0;j<5;j++){
+			cout<< a[i][j]<<" | ";
+		}
+		cout<<endl
+	}
+	
+	// MENAMPILKAN MATRIX R
 	cout << endl;
 	cout << "MATRIKS R :"<<endl;
 	cout << Ra1c1 <<" | "<<Ra1c2<<" | "<<Ra1c3<<" | "<<Ra1c4<<" | "<<Ra1c5<<endl;
