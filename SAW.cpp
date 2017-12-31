@@ -21,24 +21,7 @@ int main(){
 	// SETTING PRESISI DESIMAL
 	cout.setf(ios::fixed);cout.setf(ios::showpoint);cout.precision(4);
 	
-	// BUAT MATRIKS R
-	Ra1c1 = (a[0]/mc1);
-	Ra1c2 = (a[1]/mc2);
-	Ra1c3 = (a[2]/mc3);
-	Ra1c4 = (a[3]/mc4);
-	Ra1c5 = (a[4]/mc5);
-	
-	Ra2c1 = (a[5]/mc1);
-	Ra2c2 = (a[6]/mc2);
-	Ra2c3 = (a[7]/mc3);
-	Ra2c4 = (a[8]/mc4);
-	Ra2c5 = (a[9]/mc5);
-	
-	Ra3c1 = (a[10]/mc1);
-	Ra3c2 = (a[11]/mc2);
-	Ra3c3 = (a[12]/mc3);
-	Ra3c4 = (a[13]/mc4);
-	Ra3c5 = (a[14]/mc5);
+
 	
 	// MATRIKS R * W
 	RWa1c1 = Ra1c1*w[0];
@@ -66,28 +49,29 @@ int main(){
 		
 	// MENAMPILKAN NILAI
 	cout << "MATRIKS X :"<<endl;
-	for(int i=0;i<=3;i++){
+	for(int i=0;i<3;i++){
 		for(int j=0;j<5;j++){
 			cout<< a[i][j] <<" | ";
 		}
-		cout<<endl
+		cout<<endl;
 	}
 	
 	// MENAMPILKAN MATRIX R
 	cout << endl;
 	cout << "MATRIKS R :"<<endl;
 	double mc[5];
-	for(int i=1;i<=5;i++){
-		mc[1]=max(a[0][i],max(a[1][i],a[2][i]]));
-	}
-	cout << endl;
-	// MENAMPILKAN NILAI W
-	cout << "BOBOT W :"<<endl;
-	for(int i=1;i<=5;i++){
-		cout<< w[i] <<" | ";
+	for(int i=0;i<5;i++){
+		mc[i+1]=max(a[0][i],max(a[1][i],a[2][i]));
 	}
 	cout << endl;
 	
+	// MENAMPILKAN NILAI W
+	cout << "BOBOT W :"<<endl;
+	for(int i=0;i<5;i++){
+		cout<< w[i] <<" | ";
+	}
+	cout << endl;
+	cout << endl;
 	cout << "MATRIKS R * W :"<<endl;
 	cout << RWa1c1 <<" | "<<RWa1c2<<" | "<<RWa1c3<<" | "<<RWa1c4<<" | "<<RWa1c5<<endl;
 	cout << RWa2c1 <<" | "<<RWa2c2<<" | "<<RWa2c3<<" | "<<RWa2c4<<" | "<<RWa2c5<<endl;
