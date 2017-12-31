@@ -68,7 +68,7 @@ int main(){
 	cout << "MATRIKS X :"<<endl;
 	for(int i=0;i<=3;i++){
 		for(int j=0;j<5;j++){
-			cout<< a[i][j]<<" | ";
+			cout<< a[i][j] <<" | ";
 		}
 		cout<<endl
 	}
@@ -78,12 +78,16 @@ int main(){
 	cout << "MATRIKS R :"<<endl;
 	double mc[5];
 	for(int i=1;i<=5;i++){
-		mc[1]=max(a[0][i],max(a[1][i],a[2][i]]))
+		mc[1]=max(a[0][i],max(a[1][i],a[2][i]]));
 	}
 	cout << endl;
+	// MENAMPILKAN NILAI W
 	cout << "BOBOT W :"<<endl;
-	cout << w[0] <<" | "<<w[1]<<" | "<<w[2]<<" | "<<w[3]<<" | "<<w[4]<<endl;
+	for(int i=1;i<=5;i++){
+		cout<< w[i] <<" | ";
+	}
 	cout << endl;
+	
 	cout << "MATRIKS R * W :"<<endl;
 	cout << RWa1c1 <<" | "<<RWa1c2<<" | "<<RWa1c3<<" | "<<RWa1c4<<" | "<<RWa1c5<<endl;
 	cout << RWa2c1 <<" | "<<RWa2c2<<" | "<<RWa2c3<<" | "<<RWa2c4<<" | "<<RWa2c5<<endl;
