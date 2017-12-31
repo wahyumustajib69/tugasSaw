@@ -19,9 +19,7 @@ int main(){
 	double ha1,ha2,ha3;
 	
 	// SETTING PRESISI DESIMAL
-	cout.setf(ios::fixed);
-	cout.setf(ios::showpoint);
-	cout.precision(4);
+	cout.setf(ios::fixed);cout.setf(ios::showpoint);cout.precision(4);
 	
 	// AMBIL NILAI MAX TIAP KRITERIA
 	mc1=max(a[0],max(a[5],a[10]));
