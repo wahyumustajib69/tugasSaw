@@ -21,27 +21,6 @@ int main(){
 	// SETTING PRESISI DESIMAL
 	cout.setf(ios::fixed);cout.setf(ios::showpoint);cout.precision(4);
 	
-
-	
-	// MATRIKS R * W
-	RWa1c1 = Ra1c1*w[0];
-	RWa1c2 = Ra1c2*w[1];
-	RWa1c3 = Ra1c3*w[2];
-	RWa1c4 = Ra1c4*w[3];
-	RWa1c5 = Ra1c5*w[4];
-
-	RWa2c1 = Ra2c1*w[0];
-	RWa2c2 = Ra2c2*w[1];
-	RWa2c3 = Ra2c3*w[2];
-	RWa2c4 = Ra2c4*w[3];
-	RWa2c5 = Ra2c5*w[4];
-	
-	RWa3c1 = Ra3c1*w[0];
-	RWa3c2 = Ra3c2*w[1];
-	RWa3c3 = Ra3c3*w[2];
-	RWa3c4 = Ra3c4*w[3];
-	RWa3c5 = Ra3c5*w[4];
-	
 	// PENJUMLAHAN HASIL R * W	
 	ha1=RWa1c1+RWa1c2+RWa1c3+RWa1c4+RWa1c5;
 	ha2=RWa2c1+RWa2c2+RWa2c3+RWa2c4+RWa2c5;
