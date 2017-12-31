@@ -6,8 +6,6 @@ int main(){
 	// DEKLARASI VARIABEL
 	double a[3][5]={{4,4,5,3,3},{3,3,4,2,3},{5,4,2,2,2}};
 	
-	// DEKLARASI NILAI MAX DAN MIN
-	
 	double Ra1c1,Ra1c2,Ra1c3,Ra1c4,Ra1c5;
 	double Ra2c1,Ra2c2,Ra2c3,Ra2c4,Ra2c5;
 	double Ra3c1,Ra3c2,Ra3c3,Ra3c4,Ra3c5;
@@ -78,9 +76,10 @@ int main(){
 	// MENAMPILKAN MATRIX R
 	cout << endl;
 	cout << "MATRIKS R :"<<endl;
-	cout << Ra1c1 <<" | "<<Ra1c2<<" | "<<Ra1c3<<" | "<<Ra1c4<<" | "<<Ra1c5<<endl;
-	cout << Ra2c1 <<" | "<<Ra2c2<<" | "<<Ra2c3<<" | "<<Ra2c4<<" | "<<Ra2c5<<endl;
-	cout << Ra3c1 <<" | "<<Ra3c2<<" | "<<Ra3c3<<" | "<<Ra3c4<<" | "<<Ra3c5<<endl;
+	double mc[5];
+	for(int i=1;i<=5;i++){
+		mc[1]=max(a[0][i],max(a[1][i],a[2][i]]))
+	}
 	cout << endl;
 	cout << "BOBOT W :"<<endl;
 	cout << w[0] <<" | "<<w[1]<<" | "<<w[2]<<" | "<<w[3]<<" | "<<w[4]<<endl;
